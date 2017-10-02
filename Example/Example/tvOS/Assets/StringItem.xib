@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="13196" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="LKa-uM-raV" customClass="StringItem" customModule="Example_tvOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="280"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="361" height="280"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuZ-Kw-sxJ">
+                        <rect key="frame" x="134" y="117" width="93" height="46"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="NuZ-Kw-sxJ" firstAttribute="centerX" secondItem="LKa-uM-raV" secondAttribute="centerX" id="eMy-IC-WAS"/>
+                <constraint firstItem="NuZ-Kw-sxJ" firstAttribute="centerY" secondItem="LKa-uM-raV" secondAttribute="centerY" id="vnC-4y-dZ1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="NLO-mS-TF3"/>
+            <size key="customSize" width="361" height="280"/>
+            <connections>
+                <outlet property="textLabel" destination="NuZ-Kw-sxJ" id="nDe-x4-ZBI"/>
+            </connections>
+            <point key="canvasLocation" x="119.5" y="126"/>
+        </collectionViewCell>
+    </objects>
+</document>

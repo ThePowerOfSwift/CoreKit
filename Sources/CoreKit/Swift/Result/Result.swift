@@ -2,12 +2,13 @@
 //  Result.swift
 //  CoreKit
 //
-//  Created by Tibor Bodecs on 2016. 09. 14..
-//  Copyright © 2016. Tibor Bodecs. All rights reserved.
+//  Created by Tibor Bödecs on 2017. 09. 27..
+//  Copyright © 2017. Tibor Bödecs. All rights reserved.
 //
 
-
-
+/**
+ Generic result type
+ */
 public enum Result<T> {
     case success(T)
     case failure(Error)
@@ -15,20 +16,32 @@ public enum Result<T> {
 
 
 public extension Result {
-
-    public func map<U>(f: (T) -> U) -> Result<U> {
+    
+    /**
+     Maps the result type to a new value
+     
+     - parameter _ transform: A mapping closure.
+     - returns: A result containing the transformed value
+     */
+    public func map<U>(_ transform: (T) -> U) -> Result<U> {
         switch self {
         case .success(let t):
-            return .success(f(t))
+            return .success(transform(t))
         case .failure(let err):
             return .failure(err)
         }
     }
-
-    public func flatMap<U>(f: (T) -> Result<U>) -> Result<U> {
+    
+    /**
+     Maps the result type to a new value
+     
+     - parameter _ transform: A mapping closure.
+     - returns: A result containing the transformed value
+     */
+    public func flatMap<U>(transform: (T) -> Result<U>) -> Result<U> {
         switch self {
         case .success(let t):
-            return f(t)
+            return transform(t)
         case .failure(let err):
             return .failure(err)
         }
@@ -37,6 +50,11 @@ public extension Result {
 
 public extension Result
 {
+    /**
+     Resolves a result to a throwing error or a value
+     
+     - returns: An error thrown or a value returned
+     */
     public func resolve() throws -> T {
         switch self {
         case .success(let value):
@@ -45,10 +63,16 @@ public extension Result
             throw error
         }
     }
-
-    public init(_ throwingExpr: (() throws -> T)) {
+    
+    /**
+     Initializes a Result with a throwing expression
+     
+     - parameter _ throwingExpression: An expression to run
+     - returns: A result containing the outcome of the expression
+     */
+    public init(_ throwingExpression: (() throws -> T)) {
         do {
-            let value = try throwingExpr()
+            let value = try throwingExpression()
             self = .success(value)
         }
         catch {
@@ -56,3 +80,4 @@ public extension Result
         }
     }
 }
+

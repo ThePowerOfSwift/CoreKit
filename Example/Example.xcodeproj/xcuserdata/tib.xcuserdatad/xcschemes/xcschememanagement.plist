@@ -4,35 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>iOS.xcscheme</key>
+		<key>Example-iOS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>4</integer>
 		</dict>
-		<key>macOS.xcscheme</key>
+		<key>Example-macOS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>6</integer>
 		</dict>
-		<key>tvOS.xcscheme</key>
+		<key>Example-tvOS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>5</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>16D875171DB5D52400D06E2F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>16D875391DB5D57700D06E2F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>16D8754F1DB5D58200D06E2F</key>
+		<key>161E28141F7E5A05000CE260</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -2,11 +2,11 @@
 //  Request.swift
 //  CoreKit
 //
-//  Created by Tibor Bodecs on 2016. 09. 14..
-//  Copyright © 2016. Tibor Bodecs. All rights reserved.
+//  Created by Tibor Bödecs on 2017. 09. 27..
+//  Copyright © 2017. Tibor Bödecs. All rights reserved.
 //
 
-import Foundation
+import Foundation.NSURLSession
 
 
 public protocol Endpoint {

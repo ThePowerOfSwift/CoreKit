@@ -2,11 +2,11 @@
 //  Server.swift
 //  CoreKit
 //
-//  Created by Tibor Bodecs on 2016. 09. 14..
-//  Copyright © 2016. Tibor Bodecs. All rights reserved.
+//  Created by Tibor Bödecs on 2017. 09. 27..
+//  Copyright © 2017. Tibor Bödecs. All rights reserved.
 //
 
-import Foundation
+import Foundation.NSURLSession
 
 
 extension Int {
@@ -183,22 +183,22 @@ extension Server: URLSessionDelegate {
         return completionHandler(.performDefaultHandling, nil)
 #if os(iOS) || os(tvOS) || os(watchOS) || os(macOS)
         //basic ssl pinning
-        let trust = challenge.protectionSpace.serverTrust
-        let remoteCert  = SecTrustGetCertificateAtIndex(trust!, 0)
-        let remoteCertData = SecCertificateCopyData(remoteCert!) as Data
-
-        let certPath = Bundle.main.path(forResource: self.domain, ofType: "cer")
-        let localCertificateData = try! Data(contentsOf: URL(fileURLWithPath: certPath!))
-        let localCertificate = SecCertificateCreateWithData(nil, localCertificateData as CFData)
-
-        if remoteCertData == localCertificateData {
-            let credential = URLCredential(trust: trust!)
-            challenge.sender?.use(credential, for: challenge)
-            completionHandler(.useCredential, credential)
-        }
-        else {
-            completionHandler(.rejectProtectionSpace, nil)
-        }
+//        let trust = challenge.protectionSpace.serverTrust
+//        let remoteCert  = SecTrustGetCertificateAtIndex(trust!, 0)
+//        let remoteCertData = SecCertificateCopyData(remoteCert!) as Data
+//
+//        let certPath = Bundle.main.path(forResource: self.domain, ofType: "cer")
+//        let localCertificateData = try! Data(contentsOf: URL(fileURLWithPath: certPath!))
+//        let localCertificate = SecCertificateCreateWithData(nil, localCertificateData as CFData)
+//
+//        if remoteCertData == localCertificateData {
+//            let credential = URLCredential(trust: trust!)
+//            challenge.sender?.use(credential, for: challenge)
+//            completionHandler(.useCredential, credential)
+//        }
+//        else {
+//            completionHandler(.rejectProtectionSpace, nil)
+//        }
 #endif
     }
 

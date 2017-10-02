@@ -2,8 +2,8 @@
 //  Blocks.swift
 //  CoreKit
 //
-//  Created by Tibor Bodecs on 05/09/16.
-//  Copyright © 2016 Tibor Bodecs. All rights reserved.
+//  Created by Tibor Bödecs on 2017. 09. 26..
+//  Copyright © 2017. Tibor Bödecs. All rights reserved.
 //
 
 
@@ -21,4 +21,5 @@ public typealias ValueBlock<T> = (T) -> Void
  Generic error block
  */
 public typealias ErrorBlock = (Error) -> Void
+
 
