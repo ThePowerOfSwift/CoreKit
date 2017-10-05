@@ -437,6 +437,10 @@
 		16A98F251F7B993C00CBADCB /* Operation+Recursive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A98F231F7B993C00CBADCB /* Operation+Recursive.swift */; };
 		16A98F261F7B993C00CBADCB /* Operation+Recursive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A98F231F7B993C00CBADCB /* Operation+Recursive.swift */; };
 		16A98F271F7B993C00CBADCB /* Operation+Recursive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A98F231F7B993C00CBADCB /* Operation+Recursive.swift */; };
+		16C1AE2D1F86236C0043EE48 /* URLRequestLoggerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1AE2C1F86236C0043EE48 /* URLRequestLoggerProtocol.swift */; };
+		16C1AE2E1F86236C0043EE48 /* URLRequestLoggerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1AE2C1F86236C0043EE48 /* URLRequestLoggerProtocol.swift */; };
+		16C1AE2F1F86236C0043EE48 /* URLRequestLoggerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1AE2C1F86236C0043EE48 /* URLRequestLoggerProtocol.swift */; };
+		16C1AE301F86236C0043EE48 /* URLRequestLoggerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1AE2C1F86236C0043EE48 /* URLRequestLoggerProtocol.swift */; };
 		16D4616A1F82D05F00B89924 /* AppleCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E284A1F7E6130000CE260 /* AppleCollectionViewItem.swift */; };
 		16D4616B1F82D06000B89924 /* AppleCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E284A1F7E6130000CE260 /* AppleCollectionViewItem.swift */; };
 		16D4616C1F82D06000B89924 /* AppleCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E284A1F7E6130000CE260 /* AppleCollectionViewItem.swift */; };
@@ -778,6 +782,9 @@
 		16A98F191F7B982000CBADCB /* URLSessionTask+StartStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSessionTask+StartStop.swift"; sourceTree = "<group>"; };
 		16A98F1E1F7B98E900CBADCB /* Operation+Execute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operation+Execute.swift"; sourceTree = "<group>"; };
 		16A98F231F7B993C00CBADCB /* Operation+Recursive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operation+Recursive.swift"; sourceTree = "<group>"; };
+		16C1AE291F8621C40043EE48 /* Logo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Logo.pdf; sourceTree = "<group>"; };
+		16C1AE2A1F8621C40043EE48 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
+		16C1AE2C1F86236C0043EE48 /* URLRequestLoggerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestLoggerProtocol.swift; sourceTree = "<group>"; };
 		16E9E0821F8269F3008175C0 /* AppleIndexPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleIndexPath.swift; sourceTree = "<group>"; };
 		16E9E0881F826B5F008175C0 /* AppleIndexSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleIndexSet.swift; sourceTree = "<group>"; };
 		16E9E08E1F826C09008175C0 /* AppleObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleObject.swift; sourceTree = "<group>"; };
@@ -804,8 +811,6 @@
 		16E9F44D1F7B09F300A78E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16E9F44F1F7B09F300A78E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16E9F4511F7B09F300A78E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		16E9F4531F7B09F300A78E33 /* Logo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Logo.pdf; sourceTree = "<group>"; };
-		16E9F4541F7B09F300A78E33 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		16E9F4561F7B09F300A78E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16E9F45B1F7B09F300A78E33 /* Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blocks.swift; sourceTree = "<group>"; };
 		16E9F45D1F7B09F300A78E33 /* Array+Last.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Last.swift"; sourceTree = "<group>"; };
@@ -1554,6 +1559,7 @@
 		16A1D2891F7C446F000D76EC /* CoreKit */ = {
 			isa = PBXGroup;
 			children = (
+				16C1AE2B1F86234D0043EE48 /* URLRequestLoggerProtocol */,
 				1603A0F21F7E785D004D226F /* StateMachine */,
 				1603A0EC1F7E7832004D226F /* Coordinator */,
 				1603A0E11F7E7809004D226F /* Grid */,
@@ -1700,6 +1706,23 @@
 				16A98F191F7B982000CBADCB /* URLSessionTask+StartStop.swift */,
 			);
 			path = URLSessionTask;
+			sourceTree = "<group>";
+		};
+		16C1AE281F8621C40043EE48 /* Brand */ = {
+			isa = PBXGroup;
+			children = (
+				16C1AE291F8621C40043EE48 /* Logo.pdf */,
+				16C1AE2A1F8621C40043EE48 /* Logo.png */,
+			);
+			path = Brand;
+			sourceTree = "<group>";
+		};
+		16C1AE2B1F86234D0043EE48 /* URLRequestLoggerProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				16C1AE2C1F86236C0043EE48 /* URLRequestLoggerProtocol.swift */,
+			);
+			path = URLRequestLoggerProtocol;
 			sourceTree = "<group>";
 		};
 		16E9E0811F8269E5008175C0 /* IndexPath */ = {
@@ -1885,7 +1908,7 @@
 		16E9F44B1F7B09F300A78E33 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				16E9F4521F7B09F300A78E33 /* Logo */,
+				16C1AE281F8621C40043EE48 /* Brand */,
 				16E9F44C1F7B09F300A78E33 /* macOS */,
 				16E9F44E1F7B09F300A78E33 /* watchOS */,
 				16E9F4501F7B09F300A78E33 /* iOS */,
@@ -1916,15 +1939,6 @@
 				16E9F4511F7B09F300A78E33 /* Info.plist */,
 			);
 			path = iOS;
-			sourceTree = "<group>";
-		};
-		16E9F4521F7B09F300A78E33 /* Logo */ = {
-			isa = PBXGroup;
-			children = (
-				16E9F4531F7B09F300A78E33 /* Logo.pdf */,
-				16E9F4541F7B09F300A78E33 /* Logo.png */,
-			);
-			path = Logo;
 			sourceTree = "<group>";
 		};
 		16E9F4551F7B09F300A78E33 /* tvOS */ = {
@@ -2508,6 +2522,7 @@
 				1687733E1F7BEC380031C8D6 /* SKCircularProgressNode.swift in Sources */,
 				16A8B6D71F7C024700D4471A /* AppleImage+Vector.swift in Sources */,
 				16F858D91F7D1FD200780B1C /* NavigationController.swift in Sources */,
+				16C1AE2D1F86236C0043EE48 /* URLRequestLoggerProtocol.swift in Sources */,
 				1685E3521F7BE3DA008FE932 /* Request.swift in Sources */,
 				16E9F4721F7B0A1400A78E33 /* Array+Unique.swift in Sources */,
 				1640E9751F7BCA1C00156F37 /* CGPoint+CenterRect.swift in Sources */,
@@ -2684,6 +2699,7 @@
 				16F858FB1F7D266000780B1C /* AppleFont+Em.swift in Sources */,
 				1685E33B1F7BE141008FE932 /* Timer+Block.swift in Sources */,
 				1687733F1F7BEC990031C8D6 /* SKCircularProgressNode.swift in Sources */,
+				16C1AE2E1F86236C0043EE48 /* URLRequestLoggerProtocol.swift in Sources */,
 				16A8B6D81F7C024700D4471A /* AppleImage+Vector.swift in Sources */,
 				16F858DA1F7D1FD200780B1C /* NavigationController.swift in Sources */,
 				1685E3531F7BE3DB008FE932 /* Request.swift in Sources */,
@@ -2860,6 +2876,7 @@
 				16F858FC1F7D266000780B1C /* AppleFont+Em.swift in Sources */,
 				1685E33C1F7BE141008FE932 /* Timer+Block.swift in Sources */,
 				168773401F7BEC9A0031C8D6 /* SKCircularProgressNode.swift in Sources */,
+				16C1AE2F1F86236C0043EE48 /* URLRequestLoggerProtocol.swift in Sources */,
 				16A8B6D91F7C024700D4471A /* AppleImage+Vector.swift in Sources */,
 				16F858DB1F7D1FD200780B1C /* NavigationController.swift in Sources */,
 				1685E3541F7BE3DC008FE932 /* Request.swift in Sources */,
@@ -3036,6 +3053,7 @@
 				16F858FD1F7D266000780B1C /* AppleFont+Em.swift in Sources */,
 				1685E33D1F7BE141008FE932 /* Timer+Block.swift in Sources */,
 				168773411F7BEC9B0031C8D6 /* SKCircularProgressNode.swift in Sources */,
+				16C1AE301F86236C0043EE48 /* URLRequestLoggerProtocol.swift in Sources */,
 				16A8B6DA1F7C024700D4471A /* AppleImage+Vector.swift in Sources */,
 				16F858DC1F7D1FD200780B1C /* NavigationController.swift in Sources */,
 				1685E3551F7BE3DC008FE932 /* Request.swift in Sources */,

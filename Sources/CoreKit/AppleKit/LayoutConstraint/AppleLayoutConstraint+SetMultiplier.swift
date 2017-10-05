@@ -7,12 +7,13 @@
 //
 
 #if os(iOS) || os(tvOS) || os(macOS)
+
     import CoreGraphics
     
     public extension AppleLayoutConstraint {
         
         func setMultiplier(multiplier: CGFloat) {
-            let newConstraint = AppleLayoutConstraint(
+            let copy = AppleLayoutConstraint(
                 item: self.firstItem as Any,
                 attribute: self.firstAttribute,
                 relatedBy: self.relation,
@@ -22,13 +23,13 @@
                 constant: self.constant
             )
             
-            newConstraint.priority         = priority
-            newConstraint.shouldBeArchived = self.shouldBeArchived
-            newConstraint.identifier       = self.identifier
-            newConstraint.isActive         = self.isActive
+            copy.priority = self.priority
+            copy.shouldBeArchived = self.shouldBeArchived
+            copy.identifier = self.identifier
+            copy.isActive = self.isActive
             
             AppleLayoutConstraint.deactivate([self])
-            AppleLayoutConstraint.activate([newConstraint])
+            AppleLayoutConstraint.activate([copy])
         }
     }
 #endif
