@@ -600,10 +600,10 @@
 		16F859051F7D29B100780B1C /* AppleFont+Variants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F859031F7D29B100780B1C /* AppleFont+Variants.swift */; };
 		16F859061F7D29B100780B1C /* AppleFont+Variants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F859031F7D29B100780B1C /* AppleFont+Variants.swift */; };
 		16F859071F7D29B100780B1C /* AppleFont+Variants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F859031F7D29B100780B1C /* AppleFont+Variants.swift */; };
-		16F859091F7D2DAA00780B1C /* AppleFont+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F859081F7D2DAA00780B1C /* AppleFont+Size.swift */; };
-		16F8590A1F7D2DAA00780B1C /* AppleFont+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F859081F7D2DAA00780B1C /* AppleFont+Size.swift */; };
-		16F8590B1F7D2DAA00780B1C /* AppleFont+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F859081F7D2DAA00780B1C /* AppleFont+Size.swift */; };
-		16F8590C1F7D2DAA00780B1C /* AppleFont+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F859081F7D2DAA00780B1C /* AppleFont+Size.swift */; };
+		16F859091F7D2DAA00780B1C /* AppleFont+Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F859081F7D2DAA00780B1C /* AppleFont+Height.swift */; };
+		16F8590A1F7D2DAA00780B1C /* AppleFont+Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F859081F7D2DAA00780B1C /* AppleFont+Height.swift */; };
+		16F8590B1F7D2DAA00780B1C /* AppleFont+Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F859081F7D2DAA00780B1C /* AppleFont+Height.swift */; };
+		16F8590C1F7D2DAA00780B1C /* AppleFont+Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F859081F7D2DAA00780B1C /* AppleFont+Height.swift */; };
 		16F859131F7E535400780B1C /* Object+UniqueIdentifier_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F8590E1F7E534900780B1C /* Object+UniqueIdentifier_Tests.swift */; };
 		16F859141F7E535500780B1C /* Object+UniqueIdentifier_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F8590E1F7E534900780B1C /* Object+UniqueIdentifier_Tests.swift */; };
 		16F859151F7E535600780B1C /* Object+UniqueIdentifier_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F8590E1F7E534900780B1C /* Object+UniqueIdentifier_Tests.swift */; };
@@ -838,7 +838,7 @@
 		16F858F91F7D266000780B1C /* AppleFont+Em.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppleFont+Em.swift"; sourceTree = "<group>"; };
 		16F858FE1F7D291400780B1C /* AppleFont+Family.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppleFont+Family.swift"; sourceTree = "<group>"; };
 		16F859031F7D29B100780B1C /* AppleFont+Variants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppleFont+Variants.swift"; sourceTree = "<group>"; };
-		16F859081F7D2DAA00780B1C /* AppleFont+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppleFont+Size.swift"; sourceTree = "<group>"; };
+		16F859081F7D2DAA00780B1C /* AppleFont+Height.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppleFont+Height.swift"; sourceTree = "<group>"; };
 		16F8590E1F7E534900780B1C /* Object+UniqueIdentifier_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Object+UniqueIdentifier_Tests.swift"; sourceTree = "<group>"; };
 		16F859161F7E57DC00780B1C /* Object+ObjectName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Object+ObjectName.swift"; sourceTree = "<group>"; };
 		16F912EE1F7D0F580010C889 /* AppleViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppleViewController+Alert.swift"; sourceTree = "<group>"; };
@@ -1427,7 +1427,7 @@
 				16F858F91F7D266000780B1C /* AppleFont+Em.swift */,
 				16F858FE1F7D291400780B1C /* AppleFont+Family.swift */,
 				16F859031F7D29B100780B1C /* AppleFont+Variants.swift */,
-				16F859081F7D2DAA00780B1C /* AppleFont+Size.swift */,
+				16F859081F7D2DAA00780B1C /* AppleFont+Height.swift */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -2504,7 +2504,7 @@
 				16A8B6BE1F7BFE0E00D4471A /* AppleImage.swift in Sources */,
 				161E28671F7E6927000CE260 /* CollectionView.swift in Sources */,
 				16F858D31F7D1D7C00780B1C /* AppleScrollView.swift in Sources */,
-				16F859091F7D2DAA00780B1C /* AppleFont+Size.swift in Sources */,
+				16F859091F7D2DAA00780B1C /* AppleFont+Height.swift in Sources */,
 				16A1D26F1F7C41B4000D76EC /* AppleNavigationController.swift in Sources */,
 				16A98EE41F7B92EA00CBADCB /* UniqueIdentifier.swift in Sources */,
 				16E9F4701F7B0A1400A78E33 /* Array+Last.swift in Sources */,
@@ -2682,7 +2682,7 @@
 				16A1D1C61F7C32DE000D76EC /* AppleEdgeInsets+Init.swift in Sources */,
 				16A8B6BF1F7BFE0E00D4471A /* AppleImage.swift in Sources */,
 				16F858D41F7D1D7C00780B1C /* AppleScrollView.swift in Sources */,
-				16F8590A1F7D2DAA00780B1C /* AppleFont+Size.swift in Sources */,
+				16F8590A1F7D2DAA00780B1C /* AppleFont+Height.swift in Sources */,
 				16A1D2701F7C41B4000D76EC /* AppleNavigationController.swift in Sources */,
 				16E9E08A1F826B5F008175C0 /* AppleIndexSet.swift in Sources */,
 				16A98EE51F7B92EA00CBADCB /* UniqueIdentifier.swift in Sources */,
@@ -2859,7 +2859,7 @@
 				16A1D1C71F7C32DE000D76EC /* AppleEdgeInsets+Init.swift in Sources */,
 				16A8B6C01F7BFE0E00D4471A /* AppleImage.swift in Sources */,
 				16F858D51F7D1D7C00780B1C /* AppleScrollView.swift in Sources */,
-				16F8590B1F7D2DAA00780B1C /* AppleFont+Size.swift in Sources */,
+				16F8590B1F7D2DAA00780B1C /* AppleFont+Height.swift in Sources */,
 				16A1D2711F7C41B4000D76EC /* AppleNavigationController.swift in Sources */,
 				16E9E08B1F826B5F008175C0 /* AppleIndexSet.swift in Sources */,
 				16A98EE61F7B92EA00CBADCB /* UniqueIdentifier.swift in Sources */,
@@ -3036,7 +3036,7 @@
 				16A1D1C81F7C32DE000D76EC /* AppleEdgeInsets+Init.swift in Sources */,
 				16A8B6C11F7BFE0E00D4471A /* AppleImage.swift in Sources */,
 				16F858D61F7D1D7C00780B1C /* AppleScrollView.swift in Sources */,
-				16F8590C1F7D2DAA00780B1C /* AppleFont+Size.swift in Sources */,
+				16F8590C1F7D2DAA00780B1C /* AppleFont+Height.swift in Sources */,
 				16A1D2721F7C41B4000D76EC /* AppleNavigationController.swift in Sources */,
 				16E9E08C1F826B5F008175C0 /* AppleIndexSet.swift in Sources */,
 				16A98EE71F7B92EA00CBADCB /* UniqueIdentifier.swift in Sources */,
